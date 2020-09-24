@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+/* body------------------------------------------------------- */
+
+body {
+  background-color: #fafafa;
+  font-size: 20px;
+  font-family: Montserrat;
+  height: 2000px;
+}
+
+h1 {
+  color: #0005ff;
+  font-family: Montserrat;
+  margin: 0px 0 40px 0px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0005ff;
+  font-family: Montserrat;
+}
+
+/* navbar----------------------------------------------------- */
+
+.navigation {
+  background-color: #1d252c;
+  color: white; }
+
+.navigation .container-navigation{
+  /* height: 5rem; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem 0rem;
+  padding: 1rem;
+  /* border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: black; */
+  width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0px 8px;
+}
+
+/* about----------------------------------------------------- */
+
+.about {
+  background-color: #1d252c;
+  color: white;
+}
+.about .container-about{
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about .presentation p {
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.about .presentation p strong {
+  font-weight: 900;
+  color: #0005ff;
+}
+
+.about .owner img {
+  height: 300px;
+  width: 500px;
+  /* ajusta la imagen para que no pierda proporción */
+  object-fit: cover;
+}
+
+/* container----------------------------------------------------- */
+
+body .container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* projects----------------------------------------------------- */
+
+.projects {
+  padding: 40px 0 0 0;
+}
+
+.projects .project-one,
+.projects .project-two  {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 94px; */
+  border: solid;
+  border-color: rgb(110, 110, 110);
+  border-width: 0.5px;
+  border-radius: 10px;
+  padding: 18px;
+  font-size: small;
+}
+.projects .project-one{
+  margin-bottom: 20px;
+}
+
+.projects .project-two {
+  margin-bottom: 40px;
+}
+
+.projects .project-one .description-project-one {
+  width: 50%;
+}
+
+.projects .project-one .description-project-one p {
+  margin: 20px 0px;
+}
+
+.projects .project-one .picture-project1 {
+  border: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.projects .project-one .picture-project1 img {
+  border: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.projects .project-two .description-project-two {
+  width: 50%;
+}
+
+.projects .project-two .description-project-two p {
+  margin: 20px 0px;
+}
+
+.projects .project-two .picture-project2 {
+  border: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.projects .project-two .picture-project2 img {
+  border: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+/* habilidades----------------------------------------------------------*/
+
+.projects .abilities {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  /* margin: 0 94px; */
+}
+
+.projects .abilities .hardAbilities,
+.projects .abilities .softAbilities {
+  display: flex;
+  flex-direction: column;
+  height: 532px;
+  width: 40%;
+  border: solid;
+  border-radius: 10px;
+  padding: 18px;
+  border-width: 0.5px;
+  font-size: 15px;
+}
+
+/* habilidades blandas---------------------------------------------------*/
+
+.projects .abilities .softAbilities .hab_1,
+.projects .abilities .hardAbilities .abi_1 {
+  background-color: blue;
+  color: white;
+  border: solid;
+  border-radius: 20px;
+  border-width: 0.5px;
+  padding: 5px;
+  margin: 15px 120px 10px 0px;
+  text-align: center;
+}
+
+.projects .abilities .softAbilities .hab_2,
+.projects .abilities .softAbilities .hab_4,
+.projects .abilities .softAbilities .hab_6,
+.projects .abilities .softAbilities .hab_8,
+.projects .abilities .softAbilities .hab_10,
+.projects .abilities .hardAbilities .abi_2,
+.projects .abilities .hardAbilities .abi_4,
+.projects .abilities .hardAbilities .abi_6,
+.projects .abilities .hardAbilities .abi_8,
+.projects .abilities .hardAbilities .abi_10 {
+  background-color: blue;
+  color: white;
+  border: solid;
+  border-radius: 20px;
+  border-width: 0.5px;
+  padding: 5px;
+  margin: 10px 0px 10px 120px;
+  text-align: center;
+}
+
+.projects .abilities .softAbilities .hab_3,
+.projects .abilities .softAbilities .hab_5,
+.projects .abilities .softAbilities .hab_7,
+.projects .abilities .softAbilities .hab_9,
+.projects .abilities .hardAbilities .abi_3,
+.projects .abilities .hardAbilities .abi_5,
+.projects .abilities .hardAbilities .abi_7,
+.projects .abilities .hardAbilities .abi_9 {
+  background-color: blue;
+  color: white;
+  border: solid;
+  border-radius: 20px;
+  border-width: 0.5px;
+  padding: 5px;
+  margin: 10px 150px 10px 0px;
+  text-align: center;
+}
+
+/* contact-------------------------------------------------------------*/
+
+.contact {
+  background-color: #026fff;
+  padding: 40px 0px;
+}
+
+.contact .contact-container{
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form h4 {
+  color: white;
+}
+
+.contact form input {
+  color: gray;
+  border-radius: 10px;
+  border-width: 0;
+  padding: 10px;
+  width: 448px;
+  height: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contact form button {
+  color: white;
+  border-color: white;
+  border: solid;
+  background-color: #026fff;
+  border-radius: 3px;
+  border-width: 0.5px;
+  width: 115px;
+  height: 24px;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.contact .social_media {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0 auto auto;
+}
+
+.contact .social_media img {
+  /* invierte los colores de la imagen */
+  filter: invert(1);
+  width: 40px;
+  height: 40px;
+  margin: 0 20px 0 32px;
+}
+
+/* footer--------------------------------------------------------------*/
+
+footer {
+  background-color: black;
+  color: white;
+  border: solid;
+  border-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
