@@ -316,4 +316,27 @@ footer {
 
 /* media queries-------------------------------------------------------*/
 
-@media screen and (max-width="1024px") {}
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 767px) {
+  
+  .navigation .container-navigation {
+    display:block
+  }
+  
+  nav,
+  .navigation .container-navigation .logotype{
+    text-align: center;
+  }
+
+  nav ul li{
+    display: list-item;
+    height: 50px;
+  }
+
+  .about .container-about{
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 479px) {}
+@media screen and (max-width: 319px) {}
