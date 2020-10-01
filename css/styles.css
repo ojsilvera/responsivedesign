@@ -134,7 +134,14 @@ body .container {
   margin-bottom: 40px;
 }
 
-.projects .project-one .description-project-one p {
+.projects .project-one .description-project-one ,
+.projects .project-two .description-project-two {
+  width: 45%;
+}
+
+
+.projects .project-one .description-project-one p,
+.projects .project-two .description-project-two p  {
   margin: 20px 0px;
 }
 
@@ -158,11 +165,6 @@ body .container {
   object-fit: cover;
 }
 
-
-.projects .project-two .description-project-two p {
-  margin: 20px 0px;
-}
-
 /* habilidades----------------------------------------------------------*/
 
 .projects .abilities {
@@ -177,12 +179,12 @@ body .container {
   display: flex;
   flex-direction: column;
   height: 532px;
-  /* width: 40%; */
   border: solid;
   border-radius: 10px;
   padding: 18px;
   border-width: 0.5px;
   font-size: 15px;
+  width: 45%;
 }
 
 /* habilidades blandas---------------------------------------------------*/
@@ -336,6 +338,33 @@ footer {
   .about .container-about{
     display: block;
     text-align: center;
+  }
+
+  .projects .project-one .picture-project1, 
+  .projects .project-two .picture-project2 {
+    width: 100%;
+  }
+
+  .projects .project-one .description-project-one ,
+  .projects .project-two .description-project-two {
+    width: 100%;
+  }
+  
+  .projects .project-one .description-project-one p,
+  .projects .project-two .description-project-two p  {
+  margin: 20px 20px;}
+
+  .projects .abilities {
+    justify-content: center;
+  }
+
+  .projects .abilities .hardAbilities, 
+  .projects .abilities .softAbilities {
+    width: 70%;
+  }
+
+  .projects .abilities .hardAbilities {
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 479px) {}
