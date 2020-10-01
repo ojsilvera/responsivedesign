@@ -10,7 +10,6 @@ body {
   background-color: #fafafa;
   font-size: 20px;
   font-family: Montserrat;
-  height: 2000px;
 }
 
 h1 {
@@ -33,15 +32,15 @@ h6 {
 .navigation {
   background-color: #1d252c;
   color: white;
-  display: flex;
-  justify-content: center;
 }
 
 .navigation .container-navigation{
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
-  width: 1000px;
+  max-width: 1000px;  
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 nav {
