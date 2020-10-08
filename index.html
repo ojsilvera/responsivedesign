@@ -158,11 +158,20 @@
       <div class="curso">taller desarrollo web online - Platzi</div>
       <div class="maquetado">Maquetado por Oscar Silvera</div>
     </footer>
-
     <script>
+      const ipad = window.matchMedia('screen and (max-width: 767px)');
       const menu = document.querySelector('nav');
-      const burguerButton = document.querySelector('#burguerButton');      
-      burguerButton.addEventListener('click',hideShow)
+      const burguerButton = document.querySelector('#burguerButton');
+      
+      ipad.addListener(validation);
+      
+      function validation(event){
+        if(event.matches){
+          burguerButton.addEventListener('click',hideShow)
+        }else{
+          burguerButton.removeEventListener('click',hideShow)
+        }
+      }
       function hideShow(){
        if(menu.classList.contains('is-active')){
          menu.classList.remove('is-active');
