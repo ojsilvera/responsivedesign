@@ -384,10 +384,15 @@ footer {
     background-color: rgba(8, 0, 121, 0.5);
     z-index: 1;
     top: 40px;
-    left: 30px;
+    left:-115px;
     text-decoration: underline;
-    border-radius: 5%;
+		border-radius: 5%;
+		transition: .3s;
   }
+
+	.is-active{
+		left: 30px;
+	}
 
   ul{
     margin-top: 20px;

@@ -14,7 +14,7 @@
     <!-- navigation -->
     <header class="navigation">
       <!-- menu hamburguesa -->
-      <i class="icon-menu burger-button"></i>
+      <i class="icon-menu burger-button" id="burguerButton"></i>
       <div class="container-navigation">
         <!-- Logotype -->
         <div class="logotype">
@@ -22,8 +22,8 @@
         </div>
         <!-- Navigation bar -->
         <nav>
-          <!-- Navigation button -->
           <ul>
+            <!-- Navigation button -->
             <li><a href="#about">Sobre Mí</a></li>
             <li><a href="#projects">Proyectos</a></li>
             <li><a href="#abilities">Habilidades</a></li>
@@ -158,5 +158,18 @@
       <div class="curso">taller desarrollo web online - Platzi</div>
       <div class="maquetado">Maquetado por Oscar Silvera</div>
     </footer>
+
+    <script>
+      const menu = document.querySelector('nav');
+      const burguerButton = document.querySelector('#burguerButton');      
+      burguerButton.addEventListener('click',hideShow)
+      function hideShow(){
+       if(menu.classList.contains('is-active')){
+         menu.classList.remove('is-active');
+       }else{
+         menu.classList.add('is-active');
+       }
+      }
+    </script>
   </body>
 </html>
