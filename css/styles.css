@@ -26,6 +26,8 @@ h6 {
   color: #0005ff;
   font-family: Montserrat;
 }
+/* menú hamburguesa------------------------------------------- */
+
 
 /* navbar----------------------------------------------------- */
 
@@ -321,11 +323,34 @@ footer {
 @media screen and (max-width: 1024px) {}
 @media screen and (max-width: 767px) {
   
+  i {
+    display: block;
+    z-index: 2;
+    
+  }
+
   .navigation .container-navigation {
     display:block
   }
   
-  nav,
+  nav{
+    position: fixed;
+    background-color: rgba(8, 0, 121, 0.5);
+    z-index: 1;
+    top: 30px;
+    left: 40px;
+    text-decoration: underline;
+    border-radius: 5%;
+  }
+
+  ul{
+    margin-top: 20px;
+  }
+
+  ul li{
+    list-style: none;
+  }
+  
   .navigation .container-navigation .logotype{
     text-align: center;
   }
@@ -338,6 +363,19 @@ footer {
   .about .container-about{
     display: block;
     text-align: center;
+    position: relative;
+  }
+
+  .presentation{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 3%;
+  }
+
+  .about .presentation p{
+    font-size: 2rem;
+    line-height: 2rem;
   }
 
   .projects .project-one .picture-project1, 
@@ -366,6 +404,110 @@ footer {
   .projects .abilities .hardAbilities {
     margin-top: 20px;
   }
+
+  .about .owner {
+    display: contents;
+    width: 100%;
+  }
+
+  .contact .contact-container {
+    display: block;  
+    text-align: center;
+  }
+
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact form input {
+    width: 35%;
+    text-align: center;
+  }
+
+  .contact .social_media {
+    margin: 40px auto 0 auto;
+    display: block;
+  }
+
+  footer {
+    font-size: 12px;
+  }
 }
-@media screen and (max-width: 479px) {}
-@media screen and (max-width: 319px) {}
+
+@media screen and (max-width: 479px) {
+
+  .about .presentation p {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.contact .contact-container {
+  justify-content: center;
+}
+
+.contact form input {
+  width: 50%;
+}
+
+.contact .social_media {
+  margin: 40px auto 0 auto;
+}
+
+footer {
+  font-size: 12px;
+}
+
+}
+@media screen and (max-width: 319px) {
+
+.about .presentation p {
+    font-size: 1rem;
+    line-height: 1  rem;
+}
+
+.projects .abilities .softAbilities .hab_1,
+.projects .abilities .hardAbilities .abi_1 {
+  margin: 15px 0px 10px 0px;
+}
+
+
+.projects .abilities .softAbilities .hab_2,
+.projects .abilities .softAbilities .hab_4,
+.projects .abilities .softAbilities .hab_6,
+.projects .abilities .softAbilities .hab_8,
+.projects .abilities .softAbilities .hab_10,
+.projects .abilities .hardAbilities .abi_2,
+.projects .abilities .hardAbilities .abi_4,
+.projects .abilities .hardAbilities .abi_6,
+.projects .abilities .hardAbilities .abi_8,
+.projects .abilities .hardAbilities .abi_10 {
+  margin: 10px 0px 10px 0px;
+}
+
+.projects .abilities .softAbilities .hab_3,
+.projects .abilities .softAbilities .hab_5,
+.projects .abilities .softAbilities .hab_7,
+.projects .abilities .softAbilities .hab_9,
+.projects .abilities .hardAbilities .abi_3,
+.projects .abilities .hardAbilities .abi_5,
+.projects .abilities .hardAbilities .abi_7,
+.projects .abilities .hardAbilities .abi_9 {
+  margin: 10px 0px 10px 0px;
+}
+
+  .contact form input {
+  width: 90%;
+}
+
+.contact .social_media img {
+  margin: 0 20px 0 2px;
+}
+
+footer {
+  font-size: 12px;
+  justify-content: center;
+}
+
+}
