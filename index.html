@@ -165,13 +165,16 @@
       
       ipad.addListener(validation);
       
-      function validation(event){
+      function validation(event) {
         if(event.matches){
           burguerButton.addEventListener('click',hideShow)
         }else{
           burguerButton.removeEventListener('click',hideShow)
         }
       }
+
+      validation(ipad);
+
       function hideShow(){
        if(menu.classList.contains('is-active')){
          menu.classList.remove('is-active');
